@@ -1,130 +1,338 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Setiadji Ash Shiddiq</title>
+  <link rel="stylesheet" href="./style.css">
 
-<!-- Wrapper -->
-<div id="wrapper">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Personal Portfolio Website Design Tutorial</title>
 
-    <!-- Header -->
-    <header id="header">
-        <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- Main -->
-    <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#blogs">blogs</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <img class="tilt" src="https://i.postimg.cc/XvtwwWMH/Screenshot-2022-11-15-18-49-47-555-com-ss-android-ugc-trill.png" alt="">
+        <h3> Setiadji Ash   <span>Shiddiq</span> </h3>
+        <p> i am a <span class="typing-text"> front end developer </span> </p>
+        <a href="#about" class="btn">about me</a>
     </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="panel">
-        <div class="inner split">
-            <div>
-                <section>
-                    <h2>{{ site.footer.name }}</h2>
-                    <p>{{ site.footer.bio }}</p>
-                    <p>{{ site.footer.github }}</p>
-                </section>
-                <section>
-                    <h2>Sponsor</h2>
-                    <div class="ad">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins class="adsbygoogle"
-                             style="display:block; text-align:center;"
-                             data-ad-layout="in-article"
-                             data-ad-format="fluid"
-                             data-ad-client="ca-pub-1702577941194110"
-                             data-ad-slot="9823584598"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                </section>
-                <section>
-                    <h2>Follow me on ...</h2>
-                    <ul class="icons">
-                        {% if site.social_urls.facebook %}
-                            <li>
-                                <a href="{{ site.social_urls.facebook }}" class="icon fa-facebook">
-                                    <span class="label">Facebook</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.twitter %}
-                            <li>
-                                <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
-                                    <span class="label">Twitter</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.instagram %}
-                            <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
-                                    <span class="label">Instagram</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.dribbble %}
-                            <li>
-                                <a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble">
-                                    <span class="label">Dribbble</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.github %}
-                            <li>
-                                <a href="{{ site.social_urls.github }}" class="icon fa-github">
-                                    <span class="label">GitHub</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.linkedin %}
-                            <li>
-                                <a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin">
-                                    <span class="label">LinkedIn</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                    </ul>
-                </section>
-                <p class="copyright">
-                    &copy; {{ site.author }}. Design: {{ site.web_design }}
-                </p>
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about <span>me</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="https://i.postimg.cc/XvtwwWMH/Screenshot-2022-11-15-18-49-47-555-com-ss-android-ugc-trill.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3> my name is <span> Setiadji Ash Shiddiq </span> </h3>
+            <p class="info">Nama Ku Setiadji Ash Shiddiq , Kelaz 7 Smp , Umur Ku 13 Tahun , Aku Belajar Front End Devoloper , Tapi Masih Pemula 🙂 , Ini Adalah Website Design Yang Ku Buat Dengan Recode SC Orang Hehehe😂😂 , Website Design Ini Dibuat Dengan Github Pages 💻..</p>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> age: </span> 13 </p>
+                    <p> <span> gender: </span> male </p>
+                    <p> <span> experience  : </span> school </p>
+                    <p> <span> freelance : </span> available </p>
+                </div>
+                <div class="box">
+                    <p> <span> language : </span> indonesia / english </p>
+                    <p> <span> phone : </span> +62 812-9638-2470 </p>
+                    <p> <span> email : </span> setiadjilana@gmail.com </p>
+                    <p> <span> address : </span> indonesia, sumatera selatan  - 32121 </p>
+                </div>
             </div>
-            <div>
-                <section>
-                    <h2>Get in touch</h2>
-                    <form method="post" action="#">
-                        <div class="field half first">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
-                        </div>
-                        <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="special"/></li>
-                            <li><input type="reset" value="Reset"/></li>
-                        </ul>
-                    </form>
-                </section>
+            <a href="#" class="btn">download CV</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> <span> my </span> services </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <i class="fas fa-code"></i>
+            <h3>web development</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-paint-brush"></i>
+            <h3>graphic design</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-bullhorn"></i>
+            <h3>seo marketing</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-envelope"></i>
+            <h3>email marketing</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-mobile"></i>
+            <h3>Responsive designs</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fab fa-wordpress"></i>
+            <h3>wordpress</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> my </span> portfolio </h1>
+
+    <div class="box-container">
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/htKWT2cz/img-1.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
             </div>
         </div>
-    </footer>
-</div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/kX4WGmtB/img-2.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/XJ17DTNz/img-3.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/6345gM76/img-4.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/VNbxcpFh/img-5.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/SKq6yzLp/img-6.jpg" alt="">
+            <div class="content">
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span> my </span> blogs </h1>
+
+    <div class="box-container">
+        
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/RZPtzb0w/blog-img-1.jpg" alt="">
+            <h3> blogs title goes here </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/X7C1qd5Z/blog-img-2.jpg" alt="">
+            <h3> blogs title goes here </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+        <div class="box tilt">
+            <img src="https://i.postimg.cc/TYfQdFTs/blog-img-3.jpg" alt="">
+            <h3> blogs title goes here </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="https://i.postimg.cc/XvCM9qpq/images-3.png" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <input type="text" placeholder="subject" class="box">
+
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<div class="footer"> created by <span> mr. web designer </span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['front end developer', 'web designer', 'graphic designer', 'web developer'],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
